@@ -129,6 +129,11 @@ func runPurge(config Configuration, server Server, wg *sync.WaitGroup) {
 			sf, _ := os.Stat(pf)
 			fttl := time.Since(sf.ModTime()).Hours()
 			if fttl > float64(config.Every) {
+				err := os.Remove(pf)
+				if err != nil {
+					log.Printf("err:%s", err)
+					return
+				}
 				log.Printf("sup. de %s vieux de %.2f heures", pf, fttl)
 			}
 		}
