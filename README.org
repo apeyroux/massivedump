@@ -1,0 +1,17 @@
+Utilitaire pour faire des dump mysql.
+
+* CLI
+
+#+BEGIN_SRC 
+ja@taf:~$ massivedump -h
+Usage of massivedump:
+  -c="": Fichier de configuration
+  -d=false: dump les bases
+  -p=false: purge les bases
+#+END_SRC
+
+* crontab
+
+#+BEGIN_SRC sh
+30 12 * * * massivedump -c /home/ja/etc/massivedump-en1.js -d
+#+END_SRC

@@ -1,0 +1,25 @@
+{
+    "dumpdata":"/tmp/bkp/",
+    "every":10,
+    "Server":[
+	{
+	    "Host":"10.0.0.1",
+	    "Port":3316,
+	    "Db":["db_1",
+		  "db_2",
+		  "db_3"],
+	    "Login":"mylogin",
+	    "Password":"mypassword"
+	},
+	{
+	    "Host":"10.0.0.2",
+	    "Port":3317,
+	    "Db":["db_1",
+		  "db_2",
+		  "db_3",
+		  "db_4"],
+	    "Login":"mylogin",
+	    "Password":"mypassword"
+	}
+    ]
+}
