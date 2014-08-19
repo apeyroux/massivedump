@@ -1,5 +1,15 @@
 Utilitaire pour faire des dump mysql.
 
+* Install
+
+Si go installé
+
+#+BEGIN_SRC 
+go get github.com/communaute-cimi/massivedump
+#+END_SRC
+
+Si non, download https://github.com/communaute-cimi/massivedump/blob/master/bin/massivedump and run
+
 * CLI
 
 #+BEGIN_SRC 
